@@ -1,5 +1,6 @@
-from WordCount import WordCount
-from WordProbs import WordProbs
+import sys
+from .WordCount import wordCounts
+from .WordProbs import wordProbs
 
-if __main__:
-  WordCount wordcount = new WordCount()
+if __name__== "__main__":
+  wordProbs.getUniBigramWeights(sys.argv[1])  
