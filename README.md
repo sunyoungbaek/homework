@@ -1,6 +1,10 @@
 # Homework
 
-## Sample Result
+## Commands
+python main.py "mountain view startup"
+python google_trend_interest.py "ipad walmart"
+
+## Sample Result from Main.py
 'mountain view startp':
 {'mountain view': 0.4899983193661052, 'startup': 0.3333333333333333, 'mountain': 0.08833417365028073, 'view startup': 0.0, 'view': 0.08833417365028073}
 
