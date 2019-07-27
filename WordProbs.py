@@ -3,6 +3,7 @@ from urllib.request import urlopen
 from collections import defaultdict
 from collections import OrderedDict
 import numpy as np
+from .WordCount import wordCounts
 
 class WordProbs:
     # static variable - % of unknown unique words based on the corpus
@@ -85,3 +86,8 @@ class WordProbs:
         weights = dict(self._scoreWeights(words))
         normalizedWeights = self._normalizeWeights(weights)
         return normalizedWeights           
+
+    
+# Create a WordProbs object based on the WordCount
+wordProbs = WordProbs(wordCounts)
+    
