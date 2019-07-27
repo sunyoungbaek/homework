@@ -2,6 +2,7 @@
 
 ## Commands
 python main.py "mountain view startup"
+
 python google_trend_interest.py "ipad walmart"
 
 ## Sample Result from Main.py
