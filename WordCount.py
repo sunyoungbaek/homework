@@ -76,3 +76,12 @@ class WordCounts:
             self.numBigramCounts += 1
         self.bigramCounts[word1][word2] = self.bigramCounts[word1][word2] + 1  
         self.totalBigrams += 1
+
+        
+# Define unigram and bigram corpus URL
+unigramUrl = 'https://norvig.com/ngrams/count_1w.txt'
+bigramUrl = 'https://norvig.com/ngrams/count_2w.txt'
+
+# Create a WordCounts object based on the URLs
+wordCounts = WordCounts(unigramUrl, bigramUrl)
+
