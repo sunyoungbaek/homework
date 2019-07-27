@@ -1,3 +1,9 @@
+import pandas as pd
+from urllib.request import urlopen
+from collections import defaultdict
+from collections import OrderedDict
+import numpy as np
+
 class WordCounts:
     def __init__(self, unigramUrl, bigramUrl):
         self.unigramUrl = unigramUrl
