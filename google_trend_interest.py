@@ -17,4 +17,4 @@ if __name__== "__main__":
         sys.stdout.write('this word is not a bigram')
     else:
         df = googleTrendInterest(words)
-        sys.stdout.write(str(dict(result)))
+        sys.stdout.write(str(dict(df)))
