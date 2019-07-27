@@ -26,7 +26,7 @@ In 'beauty and the beast', 'beauty' (0.21) and (0.16) the beast (0.35) are the m
 
 In ''the fastest animal in the world', 'the fastest' (0.33) 'animal' (0.17), 'in the' (0.33), 'world' (0.16) are the main scorers. Instead of 'in the' + 'world', it would make more sense as 'in' + 'the world' grammatically. 
 
-In 'how to learn a foreign language', 'how to' (0.33) 'learn' (0.17) 'a foreign' (0.33) 'language' (0.16) are the main scorers. Here, 'a foreign' doesn't really make sense, and it shoube 'a' + 'foreign language' instead. But since 'a' is so often used whenever 'foreign' modifier is used, this model doesn't know how to separate them.
+In 'how to learn a foreign language', 'how to' (0.33) 'learn' (0.17) 'a foreign' (0.33) 'language' (0.16) are the main scorers. Here, 'a foreign' doesn't really make sense, and it shoube 'a' + 'foreign language' instead. But since 'a' is so often used whenever 'foreign' modifier is used, this model doesn't know how to separate them (even though P(w2|w1) must be small, this model doesn't seem to penalize 'a''s frequency enough).
 
 In all cases, we can see that 'in', 'and', 'the' are overweighted or over-joined (detected as bigram). Exploring how to weaken their importance using f(-log(uni/bigram prob)) can be helpful. Probabilities functions are already provided in WordProbs class.
 
@@ -36,7 +36,7 @@ I used pytrends package.
 
 Explored using top_charts() and trending_searches(), but most of them are people's names or trendy terms (movie, show, game names, etc), so they were not useful.
 
-I provided a file to look at analysis of unigram/bigram given bigram query, using Google Trends data.
+I provided a file to look at unigram/bigram interests in Google Trend, given bigram query. This helps understanding strength of unigrams/bigrams. 
 
 
 
