@@ -28,11 +28,11 @@ In ''the fastest animal in the world', 'the fastest' (0.33) 'animal' (0.17), 'in
 
 In 'how to learn a foreign language', 'how to' (0.33) 'learn' (0.17) 'a foreign' (0.33) 'language' (0.16) are the main scorers. Here, 'a foreign' doesn't really make sense, and it shoube 'a' + 'foreign language' instead. But since 'a' is so often used whenever 'foreign' modifier is used, this model doesn't know how to separate them.
 
-In all cases, we can see that 'in', 'and', 'the' are overweighted or over-joined (detected as bigram). Exploring how to weaken their importance using f(-log(uni/bigram prob)) can be helpful.
+In all cases, we can see that 'in', 'and', 'the' are overweighted or over-joined (detected as bigram). Exploring how to weaken their importance using f(-log(uni/bigram prob)) can be helpful. Probabilities functions are already provided in WordProbs class.
 
 ## Attempt to use Google Trend
 I used pytrends package.
-(MAKE SURE TO INSTALL pip install git+https://github.com/GeneralMills/pytrends. Version 4.6 has a major bug)
+(Make sure to pip install git+https://github.com/GeneralMills/pytrends. Version 4.6 has a major bug)
 
 Explored using top_charts() and trending_searches(), but most of them are people's names or trendy terms (movie, show, game names, etc), so they were not useful.
 
