@@ -1,2 +1,2 @@
-from .WordCount import wordCounts
-from .WordProb import wordProbs
+from WordCount import wordCounts
+from WordProb import wordProbs
