@@ -1,3 +1,9 @@
+import pandas as pd
+from urllib.request import urlopen
+from collections import defaultdict
+from collections import OrderedDict
+import numpy as np
+
 class WordProbs:
     # static variable - % of unknown unique words based on the corpus
     unknownWordProb = 0.05
