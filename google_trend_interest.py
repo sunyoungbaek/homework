@@ -5,7 +5,9 @@ def googleTrendInterest(words):
     pytrend = TrendReq(hl='en-US', geo='US')
     pytrend.build_payload([words[0], words[1], words[0] + ' ' + words[1]], cat=0, timeframe='today 5-y')
     result = pytrend.interest_over_time()
-    result = result.iloc[:, :3].sum()   
+    result = result.iloc[:, :3].sum()  
+    
+    return result
     
     
 if __name__== "__main__":
